@@ -10,7 +10,8 @@ BikeMessenger is a simple 2d side scroller. The game features a simple navigatio
 The point scheme is simple, collect the packages to help your player make more money as a bike messenger. Below is the points breakdown:
 - Regular Packages = $10.00
 - Red Packages = $20.00
-~ So why are the red packages worth more than the regular packages? Because they move faster across the screen.
+
+So why are the red packages worth more than the regular packages? Because they move faster across the screen.
 But what would be a game without things trying to kill you? To solve this dilemma, there are the vicious nails and insane taxi drivers in your player’s path to riches (can you feel my excitement). Avoid at all cost. May the force be with you.
 Also, there are some sound effects and a simple high score display that shows at the game over sequence.
 
