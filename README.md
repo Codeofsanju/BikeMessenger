@@ -20,36 +20,41 @@ There are three Activities in this application:
 1. MainActivity: Where all of the actual gameplay logic is implemented
 2. MenuActivity: The main menu Activity. Very simple, starts the MainActivity
 3. ResultActivity: This activity handles he logic behind displaying the result of the last game played.
+
 >MainActivity
 As stated earlier, this is where the actual logic behind the gameplay is implemented. There are 4 main things taking place here:
+
 1. Position
-- We start the position of the messenger in the middle of the screen and the potential points and enemies off screen.
-- We change the position of the player along the Y axis and the non-player objects along the x-axis.
-- Position is especially important in keeping all objects on display. This can be seen in changePos() where the player is kept from falling off of frame using the objects Y coordinate.
+  - We start the position of the messenger in the middle of the screen and the potential points and enemies off screen.
+  - We change the position of the player along the Y axis and the non-player objects along the x-axis.
+  - Position is especially important in keeping all objects on display. This can be seen in changePos() where the player is kept from     falling off of frame using the objects Y coordinate.
+
 2. Movement
-- Implemented in the changePos() class.
-- Implementation of the movement of each of the non-player objects is more or less the same. The exceptions being the speed of movement across the screen of each object.
-- The use of Math.random() is leveraged multiplied by the height of the game frame – the height of each object.
-Math.random() is used to randomize the Y axis on which the objects appear and the second half of the equation
-is to insure that the objects always appear on some Y in the frame and not outside of it.
+  - Implemented in the changePos() class.
+  - Implementation of the movement of each of the non-player objects is more or less the same. The exceptions being the speed of movement across the screen of each object.
+  - The use of Math.random() is leveraged multiplied by the height of the game frame – the height of each object.
+  Math.random() is used to randomize the Y axis on which the objects appear and the second half of the equation
+  is to insure that the objects always appear on some Y in the frame and not outside of it.
 - In the case of the player object, we vary on the Y axis instead of the X. This is because we want to move the
-messenger up and down the screen, not across it. The touch input is handled by motionEvent.getAction() in the
-onTouch event. Move_check (Boolean) is used to check if the screen is receiving input or not. Simply put, if a
-finger is on the screen, move_check is true and messenger goes up on the screen. If it is false, meaning not touch
-input is being received, the messenger goes down the screen.
+  messenger up and down the screen, not across it. The touch input is handled by motionEvent.getAction() in the
+  onTouch event. Move_check (Boolean) is used to check if the screen is receiving input or not. Simply put, if a
+  finger is on the screen, move_check is true and messenger goes up on the screen. If it is false, meaning not touch
+  input is being received, the messenger goes down the screen.
 3. Speed
-- Through this project, I learned how much of a deviation in game speed can occur across different screen sizes
-and resolutions. My initial idea was to set hard coordinate update numbers for each of the objects, but I realized
-it would make for a different experience on different devices.
+  - Through this project, I learned how much of a deviation in game speed can occur across different screen sizes
+  and resolutions. My initial idea was to set hard coordinate update numbers for each of the objects, but I realized
+  it would make for a different experience on different devices.
 - After doing some research, I found it is much better to set speed but referring to the width and height of the
-actual screen. This was done by capturing the size of x and y in integer variables and dividing that by some
-number to achieve the speed you are looking for.
+  actual screen. This was done by capturing the size of x and y in integer variables and dividing that by some
+  number to achieve the speed you are looking for.
 4. Hit detection
-- Hit detection is handles by finding the midpoint of the non player objects first, and then seeing if the center of
-the objects makes contact with the biker. This is done through an if statement and Boolean algebra. Upon
-hitting, the various non player objects their own set of code. The user of a timer is implemented to aid in
-stopping and starting the game.
+  - Hit detection is handles by finding the midpoint of the non player objects first, and then seeing if the center of
+  the objects makes contact with the biker. This is done through an if statement and Boolean algebra. Upon
+  hitting, the various non player objects their own set of code. The user of a timer is implemented to aid in
+  stopping and starting the game.
+
 >MenuActivity
+
 This activity was made to be used for the main menu of the game. The XML portion handles displaying the simple rules of the
 game while the java file handles the play button. This button starts the MainActivity.
 
