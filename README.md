@@ -1,11 +1,12 @@
 # BikeMessenger By Sanjeev Sharma
 
 #Description of app:
-I decided to do a 2d side-scroller as my application. The game features a simple navigation scheme, press and hold on screen to move the player up, release to bring the player down. In the player’s path are few different objects of interest:
+BikeMessenger is a simple 2d side scroller. The game features a simple navigation scheme, press and hold on screen to move the player up, release to bring the player down. In the player’s path are few different objects of interest:
 1. Regular Packages (in the form of a black and white boxes)
 2. Red Packages (in the form of boxes with a red bow on top)
 3. Taxis
 4. Nails
+
 The point scheme is simple, collect the packages to help your player make more money as a bike messenger. Below is the points breakdown:
 1. Regular Packages = $10.00
 2. Red Packages = $20.00
