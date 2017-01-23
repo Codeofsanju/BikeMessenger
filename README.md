@@ -35,18 +35,20 @@ As stated earlier, this is where the actual logic behind the gameplay is impleme
   - The use of Math.random() is leveraged multiplied by the height of the game frame – the height of each object.
   Math.random() is used to randomize the Y axis on which the objects appear and the second half of the equation
   is to insure that the objects always appear on some Y in the frame and not outside of it.
-- In the case of the player object, we vary on the Y axis instead of the X. This is because we want to move the
+  - In the case of the player object, we vary on the Y axis instead of the X. This is because we want to move the
   messenger up and down the screen, not across it. The touch input is handled by motionEvent.getAction() in the
   onTouch event. Move_check (Boolean) is used to check if the screen is receiving input or not. Simply put, if a
   finger is on the screen, move_check is true and messenger goes up on the screen. If it is false, meaning not touch
   input is being received, the messenger goes down the screen.
+  
 3. Speed
   - Through this project, I learned how much of a deviation in game speed can occur across different screen sizes
   and resolutions. My initial idea was to set hard coordinate update numbers for each of the objects, but I realized
   it would make for a different experience on different devices.
-- After doing some research, I found it is much better to set speed but referring to the width and height of the
+  - After doing some research, I found it is much better to set speed but referring to the width and height of the
   actual screen. This was done by capturing the size of x and y in integer variables and dividing that by some
   number to achieve the speed you are looking for.
+  
 4. Hit detection
   - Hit detection is handles by finding the midpoint of the non player objects first, and then seeing if the center of
   the objects makes contact with the biker. This is done through an if statement and Boolean algebra. Upon
@@ -55,16 +57,18 @@ As stated earlier, this is where the actual logic behind the gameplay is impleme
 
 >MenuActivity
 
-This activity was made to be used for the main menu of the game. The XML portion handles displaying the simple rules of the
-game while the java file handles the play button. This button starts the MainActivity.
+  This activity was made to be used for the main menu of the game. The XML portion handles displaying the simple rules of the
+  game while the java file handles the play button. This button starts the MainActivity.
 
 >ResultActivity
-This activity is started when the player either registers a hit with a nail or a taxi. It displays the Game Over textview and shows
-what the players score was for the game. There is also a high score tracker. It compares the current game score of the player
-with the the previously saved high score. If the current score is higher, it updates the score to the current score. If it is less, the
-high score stays the same.
+
+  This activity is started when the player either registers a hit with a nail or a taxi. It displays the Game Over textview and shows
+  what the players score was for the game. There is also a high score tracker. It compares the current game score of the player
+  with the the previously saved high score. If the current score is higher, it updates the score to the current score. If it is less, the
+  high score stays the same.
 
 >Sounds (class)
-This was not included above because it is only a java class. This class handles the 3 basic sounds in this game. The sound played
-when collecting any of the packages, and the 2 different sounds played for the nail and taxi object. This is done using a
-SoundPool and the calling playSound functions in the hitterOrQuitter portion of the main activity.
+
+  This was not included above because it is only a java class. This class handles the 3 basic sounds in this game. The sound played
+  when collecting any of the packages, and the 2 different sounds played for the nail and taxi object. This is done using a
+  SoundPool and the calling playSound functions in the hitterOrQuitter portion of the main activity.
