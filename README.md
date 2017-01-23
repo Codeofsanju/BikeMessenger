@@ -1,5 +1,6 @@
 # BikeMessenger By Sanjeev Sharma
-Description of app:
+
+#Description of app:
 I decided to do a 2d side-scroller as my application. The game features a simple navigation scheme, press and hold on screen to move the player up, release to bring the player down. In the player’s path are few different objects of interest:
 1. Regular Packages (in the form of a black and white boxes)
 2. Red Packages (in the form of boxes with a red bow on top)
@@ -11,12 +12,13 @@ The point scheme is simple, collect the packages to help your player make more m
 ~ So why are the red packages worth more than the regular packages? Because they move faster across the screen.
 But what would be a game without things trying to kill you? To solve this dilemma, there are the vicious nails and insane taxi drivers in your player’s path to riches (can you feel my excitement). Avoid at all cost. May the force be with you.
 Also, there are some sound effects and a simple high score display that shows at the game over sequence.
-Description of Code design:
+
+#Description of Code design:
 There are three Activities in this application:
 1. MainActivity: Where all of the actual gameplay logic is implemented
 2. MenuActivity: The main menu Activity. Very simple, starts the MainActivity
 3. ResultActivity: This activity handles he logic behind displaying the result of the last game played.
-MainActivity
+>MainActivity
 As stated earlier, this is where the actual logic behind the gameplay is implemented. There are 4 main things taking place here:
 1. Position
 - We start the position of the messenger in the middle of the screen and the potential points and enemies off screen.
@@ -45,15 +47,17 @@ number to achieve the speed you are looking for.
 the objects makes contact with the biker. This is done through an if statement and Boolean algebra. Upon
 hitting, the various non player objects their own set of code. The user of a timer is implemented to aid in
 stopping and starting the game.
-MenuActivity
+>MenuActivity
 This activity was made to be used for the main menu of the game. The XML portion handles displaying the simple rules of the
 game while the java file handles the play button. This button starts the MainActivity.
-ResultActivity
+
+>ResultActivity
 This activity is started when the player either registers a hit with a nail or a taxi. It displays the Game Over textview and shows
 what the players score was for the game. There is also a high score tracker. It compares the current game score of the player
 with the the previously saved high score. If the current score is higher, it updates the score to the current score. If it is less, the
 high score stays the same.
-Sounds (class)
+
+>Sounds (class)
 This was not included above because it is only a java class. This class handles the 3 basic sounds in this game. The sound played
 when collecting any of the packages, and the 2 different sounds played for the nail and taxi object. This is done using a
 SoundPool and the calling playSound functions in the hitterOrQuitter portion of the main activity.
