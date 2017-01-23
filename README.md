@@ -22,6 +22,7 @@ There are three Activities in this application:
 3. ResultActivity: This activity handles he logic behind displaying the result of the last game played.
 
 >MainActivity
+
 As stated earlier, this is where the actual logic behind the gameplay is implemented. There are 4 main things taking place here:
 
 1. Position
