@@ -2,14 +2,14 @@
 
 #Description of app:
 BikeMessenger is a simple 2d side scroller. The game features a simple navigation scheme, press and hold on screen to move the player up, release to bring the player down. In the player’s path are few different objects of interest:
-1. Regular Packages (in the form of a black and white boxes)
-2. Red Packages (in the form of boxes with a red bow on top)
-3. Taxis
-4. Nails
+- Regular Packages (in the form of a black and white boxes)
+- Red Packages (in the form of boxes with a red bow on top)
+- Taxis
+- Nails
 
 The point scheme is simple, collect the packages to help your player make more money as a bike messenger. Below is the points breakdown:
-1. Regular Packages = $10.00
-2. Red Packages = $20.00
+- Regular Packages = $10.00
+- Red Packages = $20.00
 ~ So why are the red packages worth more than the regular packages? Because they move faster across the screen.
 But what would be a game without things trying to kill you? To solve this dilemma, there are the vicious nails and insane taxi drivers in your player’s path to riches (can you feel my excitement). Avoid at all cost. May the force be with you.
 Also, there are some sound effects and a simple high score display that shows at the game over sequence.
