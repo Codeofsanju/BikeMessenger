@@ -1,6 +1,6 @@
 # BikeMessenger By Sanjeev Sharma
                   
-#Description of app:
+# Description of app:
 BikeMessenger is a simple 2d side scroller. The game features a simple navigation scheme, press and hold on screen to move the player up, release to bring the player down. In the player’s path are few different objects of interest:
 - Regular Packages (in the form of a black and white boxes)
 - Red Packages (in the form of boxes with a red bow on top)
@@ -15,16 +15,16 @@ So why are the red packages worth more than the regular packages? Because they m
 But what would be a game without things trying to kill you? To solve this dilemma, there are the vicious nails and insane taxi drivers in your player’s path to riches (can you feel my excitement). Avoid at all cost. May the force be with you.
 Also, there are some sound effects and a simple high score display that shows at the game over sequence.
 
-#Installation: 
+# Installation: 
 The game is not yet available on the Play Store, as there is much I would like to eventually add. For now:  
 The .apk (app-debug.apk) can be found in the following path: BikeMessenger\app\build\outputs\apk
 1. Drag and drop app-debug.apk onto your device
 2. Be sure your device setting allows apps to be installed from unknown sources
 3. Find .apk file on device using a file browser
-4. Click to install
-You can also email me at sanjeev.sharma90@myhunter.cuny.edu if you want the apk to be sent to your phone through email.
+4. Tap to install 
+*You can also email me at sanjeev.sharma90@myhunter.cuny.edu if you want the apk to be sent to your phone through email.
 
-#Description of Code design:
+# Description of Code design:
 There are three Activities in this application:
 1. MainActivity: Where all of the actual gameplay logic is implemented
 2. MenuActivity: The main menu Activity. Very simple, starts the MainActivity
